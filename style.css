@@ -1,0 +1,182 @@
+/* ! Base Styles */
+* {margin: 0; padding: 0;}
+body {background-color: #f1f1f1; font-family: 'Nunito', sans-serif;}
+hr {width: 90%; border: 1px solid #bdc3c7; margin: 10px auto;}
+ul {list-style-type: none;}
+a {text-decoration: none; color: black;}
+
+h1, h2, h3, h4, h5, h6 {text-transform: uppercase; letter-spacing: 10px;;}
+h1 {font-size: 25px;}
+h2 {font-size: 23px;}
+h3 {font-size: 20px;}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {letter-spacing: 5px;}
+}
+
+/*---------- index.html ----------*/
+/* ! Container */
+.container {
+    max-width: 900px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ! Navbar */
+.navbar {line-height: 50px;}
+
+.menu {overflow: hidden;}
+
+.menu__link a {
+    padding: 17px 14px;
+    float: left;
+}
+
+.menu__link > .menu__active {
+    background-color: #95afc0;
+    color: white;
+}
+
+.menu__link a:hover {background-color:#bdc3c7;}
+
+/* ! BG-Cover */
+.bg-cover img {width: 100%;}
+    
+/* ! Grid */
+.row {
+    display: flex;
+    max-width: auto;
+}
+
+.row .col {width: 100%;}
+.col__image {text-align: center;}
+.col__image img {width: 250px;}
+.col__text {margin: auto 0;}
+.col__text h3 {padding: 5px 20px;}
+
+.col__text p {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.col__buy {margin: 30px;}
+.col__buy a {
+    padding: 10px;
+    background-color: #e2e2e2;
+    border-radius: 20px;
+}
+
+.col__buy a:hover {
+    background-color: #cecdcd;
+    transition: 0.25s;
+}
+
+@media (max-width: 568px) {
+    .row {flex-wrap: wrap;}
+    .rw-reverse {flex-wrap: wrap-reverse;}
+}
+
+/*---------- frammenti.html ----------*/
+/* ! BG-Black */
+.bg-black {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Image/Frammenti/sfondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.bg-black__title {
+    width: 100%;
+    color: white;
+}
+
+.bg-black__icon {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .bg-black__icon {
+        top: 350px;
+    }
+}
+
+/* ! Grid Frammenti */
+.frammenti img {width: 100%;}
+@media (max-width: 568px) {
+    .bg-black {height: 300px;}
+    .col__text h3, .col__text p {text-align: center;}
+}
+
+/* ! Cover */
+.cover {
+    padding: 50px 120px;
+    background-color: #a4b0be;
+}
+
+.cover__title {
+    letter-spacing: 5px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.cover hr {border: 1px solid white;}
+.cover__text {
+    color: white;
+    padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .cover {padding: 20px 10px;}
+}
+
+/*---------- biografia.html ----------*/
+@media (max-width: 768px) {
+    .text {padding:0 10px; text-align: center;}
+}
+
+/*---------- ----------*/
+/* ! Footer */
+.footer {
+  background-color: #95AFC0;
+  padding: 10px 0;
+}
+
+.footer hr {
+  width: 300px;
+}
+
+.footer__icon, .footer__text {
+  max-width: auto;
+  right: 0;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  margin: 10px 0;
+  padding: 0 auto;
+}
+
+.footer__link {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.footer__link .fa {
+  font-size: 20px;
+}
+
+/* ! Helpers */
+.mr-c {margin: 0 auto;}
+.txt-c {text-align: center;}
+.mt-s {margin-top: 10px;}
+.mt-m {margin-top: 20px;}
+.dl-sp-img {display: block; margin: 0 auto;} /*Delete space bottom image*/
